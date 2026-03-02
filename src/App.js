@@ -177,6 +177,7 @@ class App extends Component {
       .sort((a, b) => b[1] - a[1])
       .slice(0, 5);
     console.log(data);
+    console.log("test");
     var fontSize = d3
       .scaleLinear()
       .domain([d3.min(data, (d) => d[1]), d3.max(data, (d) => d[1])])
